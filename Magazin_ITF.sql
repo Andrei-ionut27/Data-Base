@@ -40,12 +40,15 @@ Cod_Marime char(4),
 primary key (ID_Marime)
 );
 
+
+
+
 create table Retur_Produs (
 Nr_zile_retur int,
 Plata_retur int,
 Stare_produs varchar(20)
 );
-
+alter table retur_produs add column Cost_transport_retur int not null;
 
 
 RENAME TABLE LISTA_PRODUSE TO LISTA_PRODUSE_RENAMED;
@@ -133,5 +136,31 @@ update lista_produse
 set Pret = 700;
 
 select * from lista_produse;
+
+create table Comenzi (
+Nr_Comanda int primary key auto_increment,
+Data_comenzi date,
+Cantitate int,
+Nume varchar(30),
+Adresa varchar(50),
+Tip_produs varchar(20)
+);
+insert into comenzi (Nr_Comanda, Data_comenzi, cantitate, Nume, Adresa, Tip_produs)
+values (1, '2024-02-20', '5', 'Paunescu Andrei', 'Str.Salcamilor,Bucuresti','Haine'),
+(2, '2024-03-10', '3', 'Georgescu Dan', 'Str.Lalelelor,Iasi', 'Incaltaminte'),
+(3, '2024-03-10', '1', 'Geta Bianca', 'Str.Ion Creanga,Bucuresti', 'Haine'),
+(4, '2024-03-15', '4', 'Bour Diana', 'Str.Constantei,Ploiesti', 'Haine'),
+(5, '2024-04-18', '7', 'Dinca Ioan', 'Str.Bunei Sperante,Cluj', 'Haine'),
+(6, '2024-04-18', '2', 'Maxim Andreea', 'Str. Viei,Baia Mare', 'Incaltaminte');
+
+drop table comenzi;
+
+select * from comenzi;
+desc comenzi;
+select * from marimi;
+select * from marimi_produse;
+select * from lista_produse;
+select * from culori_produse;
+select * from culori;
 
 
