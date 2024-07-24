@@ -1,4 +1,5 @@
 /* Crearea unei tabele */
+
 create database petclinic;
 CREATE TABLE Owners (
     firstname VARCHAR(25) NOT NULL,
