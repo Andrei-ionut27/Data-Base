@@ -1,5 +1,6 @@
 create database Magazin_IFT;
 use Magazin_IFT;
+
 create table Lista_Produse (
 ID_Produse int Primary key auto_increment,
 Tip_Produs varchar(20),
