@@ -1,6 +1,6 @@
 create database cinema;
-
 /* Optiuni pentru specificarea bazei de date care o folosim
+
 1. Dublu click pe numele bazei de data
 2.Click dreapta pe numele bazei de date si sa apasam pe 
 optiuniea "Set as default schema"
