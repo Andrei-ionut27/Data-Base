@@ -154,7 +154,7 @@ values (1, '2024-02-20', '5', 'Paunescu Andrei', 'Str.Salcamilor,Bucuresti','Hai
 (6, '2024-04-18', '2', 'Maxim Andreea', 'Str. Viei,Baia Mare', 'Incaltaminte');
 
 drop table comenzi;
-
+# comenzi msql;
 select * from comenzi;
 desc comenzi;
 select * from marimi;
