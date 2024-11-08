@@ -162,5 +162,3 @@ select * from marimi_produse;
 select * from lista_produse;
 select * from culori_produse;
 select * from culori;
-
-
